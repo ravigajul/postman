@@ -45,7 +45,7 @@ This is a repository for postman collections and useful resources
 	    --environment "https://api.getpostman.com/environments/15403473-d65a1a64-3fbc-4be6-bfb5-b9db561596ec?apikey=PMAK-609a586545cb530040789de5-d8cdefdd16fbcac8e11c86c324a1876b61"  -r htmlextra
 
 	newman run  "https://api.getpostman.com/collections/15403473-6503bbaf-0bf2-ecd4-9a26-02e95f4ab915?apikey=PMAK-609a586545cb530040789de5-d8cdefdd16fbcac8e11c86c324a1876b61" \
-	    --environment "https://api.getpostman.com/environments/15403473-d65a1a64-3fbc-4be6-bfb5-b9db561596ec?apikey=PMAK-609a586545cb530040789de5-d8cdefdd16fbcac8e11c86c324a1876b61"  --reporters cli, htmlextra
+	    --environment "https://api.getpostman.com/environments/15403473-d65a1a64-3fbc-4be6-bfb5-b9db561596ec?apikey=PMAK-609a586545cb530040789de5-d8cdefdd16fbcac8e11c86c324a1876b61"  --reporters cli,htmlextra
 # 7. Setting runtime environment variables
 	var jsonData = pm.response.json();
 	postman.setEnvironmentVariable("authtoken","Token "+jsonData.user.token)
